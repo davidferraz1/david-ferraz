@@ -1,0 +1,271 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #00ffd0;
+    font-size: 40px;
+    text-align: center;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ffd0;
+    transform: scale(1.05);
+}
+
+/* CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #00ffd0;
+    transform: scale(1.2);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 120px;
+}
+
+/* ESTILO TOPO */
+section.inicio-do-site {
+    padding: 40px 4%;
+}
+
+section.inicio-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.inicio-do-site h1 {
+    color: #00ffd0;
+    font-size: 42px;
+}
+
+.inicio-do-site .txt-inicio-site p {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.inicio-do-site .imagem-topo img {
+    position: relative;
+    animation: image 2s ease-in-out infinite alternate;
+}
+
+@keyframes image {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO SOBRE MIM */
+section.sobremim {
+    padding: 80px 4%;
+}
+
+section.sobremim .flex {
+    gap: 60px;
+}
+
+.sobremim .sobremim-box {
+    color: #00ffd0;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.sobremim .sobremim-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff;
+}
+
+.sobremim .sobremim-box i {
+    font-size: 65px;
+    color: #00ffd0;
+}
+
+.sobremim .sobremim-box p {
+    font-size: 25px;
+    color: #fff;
+    text-align: left;
+}
+
+.sobremim .sobremim-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+/* ESTILO DA FORMAÇÃO */
+section.formacao {
+    padding: 80px 4%;
+}
+
+section.formacao .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+section.formacao .txtformacao h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+section.formacao .txtformacao p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 25px;
+    color: #fff;
+}
+
+/* ESTILO CONTATO */
+
+section.contato {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;    
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    color: black;
+    background-color: #00ffd0;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form input::placeholder {
+    color: black;
+}
+
+form textarea::placeholder {
+    color: black;
+}
+
+@media screen and (max-width: 1334px) {
+
+    /* GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .inicio-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop {
+        text-align: center;
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /*INICIO DO SITE */
+    section.inicio-do-site .flex {
+        gap: 40px;
+    }
+
+    section.inicio-do-site {
+        padding: 20px 8%;
+    }
+
+    .inicio-do-site h1 {
+        font-size: 30px;
+    }
+
+    .inicio-do-site .imagem-topo img {
+        width: 100%;
+    }
+
+    /* SOBRE MIM */
+    section.sobremim {
+        padding: 40px 8%;
+    }
+
+    .img-formacao img {
+        padding: 40px 8%;
+        width: 100%;
+    }
+
+}
